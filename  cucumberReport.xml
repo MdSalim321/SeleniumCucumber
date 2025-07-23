@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="17.667" tests="2" skipped="0" failures="2" errors="0" timestamp="2025-06-24T19:36:16.363267Z">
+<testcase classname="Testing the Login functionality" name="Successful login with valid Credential" time="9.079">
+<failure type="junit.framework.ComparisonFailure" message="OrangeHRM expected:&lt;[OrangeHRM]&gt; but was:&lt;[Title does not match]&gt;">
+<![CDATA[junit.framework.ComparisonFailure: OrangeHRM expected:<[OrangeHRM]> but was:<[Title does not match]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at stepDefinations.LoginSteps.page_title_should_be(LoginSteps.java:57)
+	at ✽.Page title should be "OrangeHRM"(file:///D:/SeleniumRestAssured/SeleniumCucumber/./Features/Login.feature:9)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launch browser and open Url "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
+When User enter UserName as "Admin" and password as "admin123"..............passed
+And Click on the Login button...............................................passed
+Then Page title should be "OrangeHRM".......................................failed
+And Close the browser.......................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Testing the Login functionality" name="Data Driven testing - #1.1" time="8.368">
+<failure type="junit.framework.ComparisonFailure" message="OrangeHRM expected:&lt;[OrangeHRM]&gt; but was:&lt;[Title does not match]&gt;">
+<![CDATA[junit.framework.ComparisonFailure: OrangeHRM expected:<[OrangeHRM]> but was:<[Title does not match]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at stepDefinations.LoginSteps.page_title_should_be(LoginSteps.java:57)
+	at ✽.Page title should be "OrangeHRM"(file:///D:/SeleniumRestAssured/SeleniumCucumber/./Features/Login.feature:19)
+]]>
+</failure>
+<system-out><![CDATA[
+Given User launch browser and open Url "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login".passed
+When User enter UserName as "Admin" and password as "admin123"..............passed
+And Click on the Login button...............................................passed
+Then Page title should be "OrangeHRM".......................................failed
+And Close the browser.......................................................skipped
+]]></system-out>
+</testcase>
+</testsuite>
